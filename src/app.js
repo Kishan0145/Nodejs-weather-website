@@ -89,7 +89,7 @@ app.get("*",(req,res)=>{
         name:"Kishan Sharma"
     });
 })
-const port =process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port,()=>{
-    console.log("Server is litening at Port 3000");
+    console.log("Server is litening at Port 3000"+port);
 })
