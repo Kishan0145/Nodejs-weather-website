@@ -2,7 +2,7 @@
 document.querySelector("form").addEventListener("submit",(e)=>{
     e.preventDefault();
     const searchCity = document.querySelector("input").value;
-    fetch(`http://localhost:3000/weather?address=${searchCity}`).then((responce)=>{
+    fetch(`/weather?address=${searchCity}`).then((responce)=>{
             return responce.json();
     }).then((data)=>{
         if(data.error)
